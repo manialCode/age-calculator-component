@@ -1,0 +1,23 @@
+@import "variables.css";
+@import "utility-classes.css";
+@import "font-face.css";
+@import "reset.css";
+
+body {
+    font-family: var(--ff-body);
+    font-weight: var(--fw-regular);
+    font-size: var(--fs-body);
+
+    text-align: center;
+
+    display: grid;
+
+    background-color: var(--clr-neutral-200);
+    padding: 1.5rem;
+}
+
+@media (min-width: 30em) {
+    body {
+        place-content: center;
+    }
+}
