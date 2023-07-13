@@ -13,7 +13,7 @@
   const currentYear = new Date().getFullYear();
 
   const validation = (day, month, year) => {
-    inputDate.value.isValid = true;
+    inputDate.value.isValid = false;
     inputDate.value.isEmpty = day === null && month === null && year === null;
 
     if (!inputDate.value.isEmpty) {
@@ -25,6 +25,7 @@
         inputDate.value.isValid = false;
       }
     }
+    console.log(inputDate.value.isValid);
     return inputDate.value.isValid;
   };
 
